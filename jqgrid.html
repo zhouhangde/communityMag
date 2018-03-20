@@ -750,7 +750,7 @@
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 工作人员管理 </span>
 
 							</a>
 
@@ -942,7 +942,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 社区管理 </span>
 
 
 
@@ -954,7 +954,7 @@
 
 							<ul class="submenu">
 
-								<li>
+								<!--<li>
 
 									<a href="tables.html">
 
@@ -964,7 +964,7 @@
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
@@ -974,7 +974,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										社区信息
 
 									</a>
 
@@ -1070,7 +1070,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1088,7 +1088,7 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
 									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
 
@@ -1110,7 +1110,7 @@
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 便民服务 </span>
 
 							</a>
 
@@ -1355,14 +1355,14 @@
 						</script>
 
 
-
+                        <!--第二行右侧第一行-->
 						<ul class="breadcrumb">
 
 							<li>
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
@@ -1370,16 +1370,16 @@
 
 							<li>
 
-								<a href="#">Tables</a>
+								<a href="#">社区管理</a>
 
 							</li>
 
-							<li class="active">jqGrid plugin</li>
+							<li class="active">社区信息</li>
 
 						</ul><!-- .breadcrumb -->
 
 
-
+                        <!--第二行右侧搜索框-->
 						<div class="nav-search" id="nav-search">
 
 							<form class="form-search">
@@ -1401,18 +1401,18 @@
 
 
 					<div class="page-content">
-
+                        <!--社区管理右侧第二行-->
 						<div class="page-header">
 
 							<h1>
 
-								jqGrid
+								社区管理
 
 								<small>
 
 									<i class="icon-double-angle-right"></i>
 
-									Dynamic tables and grids using jqGrid plugin
+									社区信息
 
 								</small>
 
@@ -1421,7 +1421,7 @@
 						</div><!-- /.page-header -->
 
 
-
+                        <!--社区管理右侧第三行-->
 						<div class="row">
 
 							<div class="col-xs-12">
@@ -1485,13 +1485,13 @@
 					</div>
 
 
-
+                     <!--社区信息页面的工具按钮侧滑-->
 					<div class="ace-settings-box" id="ace-settings-box">
 
 						<div>
 
 							<div class="pull-left">
-
+                                <!--第二行右侧的下拉框中的四个颜色选项-->
 								<select id="skin-colorpicker" class="hide">
 
 									<option data-skin="default" value="#438EB9">#438EB9</option>
@@ -1575,7 +1575,7 @@
 
 
 			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-
+                <!--社区信息页面右侧的最下方的向上箭头按钮-->
 				<i class="icon-double-angle-up icon-only bigger-110"></i>
 
 			</a>
@@ -1675,7 +1675,7 @@
 
 
 		<script type="text/javascript">
-
+           //表格数据
 			var grid_data = 
 
 			[ 
@@ -1750,7 +1750,7 @@
 
 					height: 250,
 
-					colNames:[' ', 'ID','Last Sales','Name', 'Stock', 'Ship via','Notes'],
+					colNames:[' ', 'ID','申报日期','社区名称', '社区状态', '社区位置','备注'],
 
 					colModel:[
 
@@ -1834,7 +1834,7 @@
 
 					editurl: $path_base+"/dummy.html",//nothing is saved
 
-					caption: "jqGrid with inline editing",
+					caption: "社区基础信息管理",
 
 			
 
