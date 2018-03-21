@@ -1,34 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 	<head>
+
 		<meta charset="utf-8" />
-		<title>权限管理</title>
+
+		<title>社区应用后台管理系统</title>
+
+		 
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
 		<!-- basic styles -->
+
+
+
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
 		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+
+
 		<!--[if IE 7]>
+
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+
 		<![endif]-->
+
+
+
 		<!-- page specific plugin styles -->
-		<link rel="stylesheet" href="assets/css/fullcalendar.css" />
-		<link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
+
+
+
 		<!-- fonts -->
+
+
+
+		 
+
+
+        <link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
 		<!-- ace styles -->
+
+
+
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
+
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+
+
 		<!--[if lte IE 8]>
+
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+
 		<![endif]-->
+
+
+
 		<!-- inline styles related to this page -->
+
+
+
 		<!-- ace settings handler -->
+
+
+
 		<script src="assets/js/ace-extra.min.js"></script>
+
+
+
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+
+
 		<!--[if lt IE 9]>
+
 		<script src="assets/js/html5shiv.js"></script>
+
 		<script src="assets/js/respond.min.js"></script>
+
 		<![endif]-->
+
 	</head>
 
 
@@ -517,7 +576,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -531,7 +590,7 @@
 
 										<i class="icon-user"></i>
 
-										Profile
+										个人资料
 
 									</a>
 
@@ -545,11 +604,11 @@
 
 								<li>
 
-									<a href="login.html">
+									<a href="#">
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -667,7 +726,7 @@
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 服务台 </span>
+								<span class="menu-text"> 便民服务 </span>
 
 							</a>
 
@@ -689,7 +748,7 @@
 
 
 
-						<li>
+						<li class="open">
 
 							<a href="#" class="dropdown-toggle">
 
@@ -741,22 +800,12 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										找居委会
+										找委员会
 
 									</a>
 
 								</li>
-                                <li>
 
-									<a href="wuye.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										找物业
-
-									</a>
-
-								</li>
 
 
 								<li>
@@ -787,8 +836,7 @@
 
 
 
-							
-
+								
 							</ul>
 
 						</li>
@@ -851,7 +899,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 社区发布 </span>
+								<span class="menu-text"> 社区分布 </span>
 
 
 
@@ -877,6 +925,7 @@
 
 
 
+								
 
 
 
@@ -926,7 +975,7 @@
 
 
 
-						<li class="active">
+						<li  class="active">
 
 							<a href="calendar.html">
 
@@ -938,11 +987,6 @@
 
 									权限管理
 
-									<!--<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>-->
 
 								</span>
 
@@ -958,15 +1002,13 @@
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 便民服务 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
 						</li>
 
 
-
-						
 
 					</ul><!-- /.nav-list -->
 
@@ -1012,7 +1054,15 @@
 
 							</li>
 
-							<li class="active">权限管理</li>
+
+
+							<li>
+
+								<a href="#">权限管理</a>
+
+							</li>
+
+							<!--<li class="active">Treeview</li>-->
 
 						</ul><!-- .breadcrumb -->
 
@@ -1024,7 +1074,7 @@
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1050,7 +1100,7 @@
 
 									<i class="icon-double-angle-right"></i>
 
-									with draggable and editable events
+									with selectable items(single &amp; multiple) and custom icons
 
 								</small>-->
 
@@ -1059,44 +1109,121 @@
 						</div><!-- /.page-header -->
 
 
-                        <!--权限管理页面的右方整个第三行-->
-						 <div class="row">
+
+						<div class="row">
 
 							<div class="col-xs-12">
 
 								<!-- PAGE CONTENT BEGINS -->
 
+                                <div class="alert alert-info">
+	
+										<i class="icon-hand-right"></i>
+	
+	
+	
+										您的数据可能会提交到系统后台，请谨慎操作。
+	
+										<button class="close" data-dismiss="alert">
+	
+											<i class="icon-remove"></i>
+	
+										</button>
+	
+								</div>
+	
+
+								<div class="row">
+
+									<div class="col-sm-6">
+
+										<div class="widget-box">
+
+											<div class="widget-header header-color-blue2">
+
+												<h4 class="lighter smaller">菜单分配</h4>
+
+											</div>
 
 
-								<div class="alert alert-info">
 
-									<i class="icon-hand-right"></i>
+											<div class="widget-body">
+
+												<div class="widget-main padding-8">
+
+													<div id="tree1" class="tree"></div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+                                    <div class="col-xs-6">
+
+								<!-- PAGE CONTENT BEGINS -->
 
 
 
-									您的数据可能会提交到系统后台，请谨慎操作。
+									
+	
+	
+									<table id="grid-table"></table>
+	
+	
+	
+									<div id="grid-pager"></div>
+	
+	
+	
+									<script type="text/javascript">
+	
+										var $path_base = "/";//this will be used in gritter alerts containing images
+	
+									</script>
+	
+	
+	
+									<!-- PAGE CONTENT ENDS -->
+	
+								</div><!-- /.col -->
 
-									<button class="close" data-dismiss="alert">
 
-										<i class="icon-remove"></i>
+									<!--<div class="col-sm-6">
 
-									</button>
+										<div class="widget-box">
+
+											<div class="widget-header header-color-green2">
+
+												<h4 class="lighter smaller">Browse Files</h4>
+
+											</div>
+
+
+
+											<div class="widget-body">
+
+												<div class="widget-main padding-8">
+
+													<div id="tree2" class="tree"></div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>-->
 
 								</div>
 
 
 
-								<table id="grid-table"></table>
-
-
-
-								<div id="grid-pager"></div>
-
-
-
 								<script type="text/javascript">
 
-									var $path_base = "/";//this will be used in gritter alerts containing images
+									var $assets = "assets";//this will be used in fuelux.tree-sampledata.js
 
 								</script>
 
@@ -1290,22 +1417,11 @@
 
 
 
-		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/fuelux/data/fuelux.tree-sampledata.js"></script>
 
-		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-
-		<script src="assets/js/fullcalendar.min.js"></script>
-
-		<script src="assets/js/bootbox.min.js"></script>
-         
-         
+		<script src="assets/js/fuelux/fuelux.tree.min.js"></script>
 
 
-		<!-- ace scripts -->
-
-
-
-        <!--权限管理基础信息表格引入的js-->
         <!-- page specific plugin scripts -->
 
 
@@ -1319,6 +1435,8 @@
 
 
 		<!-- ace scripts -->
+		<!-- ace scripts -->
+
 
 
 		<script src="assets/js/ace-elements.min.js"></script>
@@ -1333,340 +1451,87 @@
 
 		<script type="text/javascript">
 
-			jQuery(function($) {
+			jQuery(function($){
 
 
 
-/* initialize the external events
+		$('#tree1').ace_tree({
 
-	-----------------------------------------------------------------*/
+			dataSource: treeDataSource ,
 
+			multiSelect:true,
 
+			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
 
-	$('#external-events div.external-event').each(function() {
+			'open-icon' : 'icon-minus',
 
+			'close-icon' : 'icon-plus',
 
+			'selectable' : true,
 
-		// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+			'selected-icon' : 'icon-ok',
 
-		// it doesn't need to have a start or end
-
-		var eventObject = {
-
-			title: $.trim($(this).text()) // use the element's text as the event title
-
-		};
-
-
-
-		// store the Event Object in the DOM element so we can get to it later
-
-		$(this).data('eventObject', eventObject);
-
-
-
-		// make the event draggable using jQuery UI
-
-		$(this).draggable({
-
-			zIndex: 999,
-
-			revert: true,      // will cause the event to go back to its
-
-			revertDuration: 0  //  original position after the drag
+			'unselected-icon' : 'icon-remove'
 
 		});
 
-		
 
-	});
 
+		$('#tree2').ace_tree({
 
+			dataSource: treeDataSource2 ,
 
+			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
 
+			'open-icon' : 'icon-folder-open',
 
+			'close-icon' : 'icon-folder-close',
 
+			'selectable' : false,
 
+			'selected-icon' : null,
 
+			'unselected-icon' : null
 
-	/* initialize the calendar
+		});
 
-	-----------------------------------------------------------------*/
 
 
 
-	var date = new Date();
 
-	var d = date.getDate();
 
-	var m = date.getMonth();
 
-	var y = date.getFullYear();
+		/**
 
+		$('#tree1').on('loaded', function (evt, data) {
 
+		});
 
-	
 
-	var calendar = $('#calendar').fullCalendar({
 
-		 buttonText: {
+		$('#tree1').on('opened', function (evt, data) {
 
-			prev: '<i class="icon-chevron-left"></i>',
+		});
 
-			next: '<i class="icon-chevron-right"></i>'
 
-		},
 
-	
+		$('#tree1').on('closed', function (evt, data) {
 
-		header: {
+		});
 
-			left: 'prev,next today',
 
-			center: 'title',
 
-			right: 'month,agendaWeek,agendaDay'
+		$('#tree1').on('selected', function (evt, data) {
 
-		},
+		});
 
-		events: [
+		*/
 
-		{
+});
 
-			title: 'All Day Event',
-
-			start: new Date(y, m, 1),
-
-			className: 'label-important'
-
-		},
-
-		{
-
-			title: 'Long Event',
-
-			start: new Date(y, m, d-5),
-
-			end: new Date(y, m, d-2),
-
-			className: 'label-success'
-
-		},
-
-		{
-
-			title: 'Some Event',
-
-			start: new Date(y, m, d-3, 16, 0),
-
-			allDay: false
-
-		}]
-
-		,
-
-		editable: true,
-
-		droppable: true, // this allows things to be dropped onto the calendar !!!
-
-		drop: function(date, allDay) { // this function is called when something is dropped
-
-		
-
-			// retrieve the dropped element's stored Event Object
-
-			var originalEventObject = $(this).data('eventObject');
-
-			var $extraEventClass = $(this).attr('data-class');
-
-			
-
-			
-
-			// we need to copy it, so that multiple events don't have a reference to the same object
-
-			var copiedEventObject = $.extend({}, originalEventObject);
-
-			
-
-			// assign it the date that was reported
-
-			copiedEventObject.start = date;
-
-			copiedEventObject.allDay = allDay;
-
-			if($extraEventClass) copiedEventObject['className'] = [$extraEventClass];
-
-			
-
-			// render the event on the calendar
-
-			// the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-
-			$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-			
-
-			// is the "remove after drop" checkbox checked?
-
-			if ($('#drop-remove').is(':checked')) {
-
-				// if so, remove the element from the "Draggable Events" list
-
-				$(this).remove();
-
-			}
-
-			
-
-		}
-
-		,
-
-		selectable: true,
-
-		selectHelper: true,
-
-		select: function(start, end, allDay) {
-
-			
-
-			bootbox.prompt("New Event Title:", function(title) {
-
-				if (title !== null) {
-
-					calendar.fullCalendar('renderEvent',
-
-						{
-
-							title: title,
-
-							start: start,
-
-							end: end,
-
-							allDay: allDay
-
-						},
-
-						true // make the event "stick"
-
-					);
-
-				}
-
-			});
-
-			
-
-
-
-			calendar.fullCalendar('unselect');
-
-			
-
-		}
-
-		,
-
-		eventClick: function(calEvent, jsEvent, view) {
-
-
-
-			var form = $("<form class='form-inline'><label>Change event name &nbsp;</label></form>");
-
-			form.append("<input class='middle' autocomplete=off type=text value='" + calEvent.title + "' /> ");
-
-			form.append("<button type='submit' class='btn btn-sm btn-success'><i class='icon-ok'></i> Save</button>");
-
-			
-
-			var div = bootbox.dialog({
-
-				message: form,
-
-			
-
-				buttons: {
-
-					"delete" : {
-
-						"label" : "<i class='icon-trash'></i> Delete Event",
-
-						"className" : "btn-sm btn-danger",
-
-						"callback": function() {
-
-							calendar.fullCalendar('removeEvents' , function(ev){
-
-								return (ev._id == calEvent._id);
-
-							})
-
-						}
-
-					} ,
-
-					"close" : {
-
-						"label" : "<i class='icon-remove'></i> Close",
-
-						"className" : "btn-sm"
-
-					} 
-
-				}
-
-
-
-			});
-
-			
-
-			form.on('submit', function(){
-
-				calEvent.title = form.find("input[type=text]").val();
-
-				calendar.fullCalendar('updateEvent', calEvent);
-
-				div.modal("hide");
-
-				return false;
-
-			});
-
-			
-
-		
-
-			//console.log(calEvent.id);
-
-			//console.log(jsEvent);
-
-			//console.log(view);
-
-
-
-			// change the border color just for fun
-
-			//$(this).css('border-color', 'red');
-
-
-
-		}
-
-		
-
-	});
-
-
-
-
-
-})
-          
-          
-        //表格数据
+		</script>
+         <script type="text/javascript">
+           //表格数据
 			var grid_data = 
 
 			[ 
@@ -1681,7 +1546,41 @@
 
 				{id:"5",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
 
-				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"}
+				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"7",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"8",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"9",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"10",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"11",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"12",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"13",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"14",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"15",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"16",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"17",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"18",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"19",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"20",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"21",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"22",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"23",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"}
 
 			];	
 
@@ -1707,7 +1606,7 @@
 
 					height: 250,
 
-					colNames:[' ', 'ID','填报日期','菜单名称', '菜单分配状态', '角色','备注'],
+					colNames:[' ', 'ID','角色名称', '启用状态', '主菜单名称','备注'],
 
 					colModel:[
 
@@ -1729,18 +1628,17 @@
 
 						},
 
-						{name:'id',index:'id', width:60, sorttype:"int", editable: true},
+						{name:'id',index:'id', width:40, sorttype:"int", editable: true},
 
-						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+//						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
 
-//						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
-                        {name:'name',index:'name', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
 
 						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
 
 						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
 
-						{name:'note',index:'note', width:150, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
+						{name:'note',index:'note', width:120, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
 
 					], 
 
@@ -1792,7 +1690,7 @@
 
 					editurl: $path_base+"/dummy.html",//nothing is saved
 
-					caption: "权限基础信息",
+					caption: "权限信息一览",
 
 			
 
@@ -2251,7 +2149,7 @@
 			
 
 			});
-  
+
 		</script>
 
 	
